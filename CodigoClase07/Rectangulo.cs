@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace CodigoClase07
 {   
-
+    //Método: Funcion y Procedimientos (Algunas personas, no es lo correcto)
+    //Método y función son lo mismo
+    //Funciones o método  (retorna) y Procedimientos o void (ejecuta)
      //Clases y Entidades son los mismo!
      class Rectangulo
     {

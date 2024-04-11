@@ -25,9 +25,7 @@ class Program
         };
 
         Console.WriteLine("AREA TRIANGULO");
-        Console.WriteLine(triangulo.CalcularArea());
-
-
+        Console.WriteLine(triangulo.CalcularArea());      
 
         #region PrimeraForma
         //Constructor por defecto
@@ -45,8 +43,9 @@ class Program
         Console.WriteLine("PRIMERA FORMA");
         Console.WriteLine(rectangulo.CalcularArea());
         Console.WriteLine(rectangulo.CalcularPerimetro());
-        #endregion
 
+        
+        #endregion
 
         #region SegundForma
 
@@ -59,6 +58,8 @@ class Program
         Console.WriteLine("SEGUNDA FORMA");
         Console.WriteLine(rectanguloa.CalcularArea());
         Console.WriteLine(rectanguloa.CalcularPerimetro());
+
+   
         #endregion
 
         #region TerceraForma
@@ -72,6 +73,7 @@ class Program
         Console.WriteLine("TERCERA FORMA");
         Console.WriteLine(rectanguloa.CalcularArea());
         Console.WriteLine(rectanguloa.CalcularPerimetro());
+
 
         #endregion
 
