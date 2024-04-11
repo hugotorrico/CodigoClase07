@@ -17,9 +17,8 @@ class Program
 {
     static void Main()
     {
-
-
         #region PrimeraForma
+        //Constructor por defecto
         Punto punto1 = new Punto(0, 0);
         Punto punto2 = new Punto(8, 0);
         Punto punto3 = new Punto(8, 4);
@@ -31,12 +30,39 @@ class Program
         rectangulo.Punto3 = punto3;
         rectangulo.Punto4 = punto4;
 
-
+        Console.WriteLine("PRIMERA FORMA");
         Console.WriteLine(rectangulo.CalcularArea());
         Console.WriteLine(rectangulo.CalcularPerimetro());
         #endregion
 
-        //Rectangulo rectangulo = new Rectangulo(punto1, punto2, punto3, punto4);
+
+        #region SegundForma
+
+        Punto punto1a = new Punto(0, 0);
+        Punto punto2a = new Punto(8, 0);
+        Punto punto3a = new Punto(8, 4);
+        Punto punto4a = new Punto(0, 4);
+
+        Rectangulo rectanguloa = new Rectangulo(punto1a,punto2a,punto3a,punto4a);
+        Console.WriteLine("SEGUNDA FORMA");
+        Console.WriteLine(rectanguloa.CalcularArea());
+        Console.WriteLine(rectanguloa.CalcularPerimetro());
+        #endregion
+
+        #region TerceraForma
+        Rectangulo rectangulob = new Rectangulo
+        {
+            Punto1 = new Punto(0, 0),
+            Punto2 = new Punto(8, 0),
+            Punto3 = new Punto(8, 4),
+            Punto4 = new Punto(0, 4)
+        };
+        Console.WriteLine("TERCERA FORMA");
+        Console.WriteLine(rectanguloa.CalcularArea());
+        Console.WriteLine(rectanguloa.CalcularPerimetro());
+
+        #endregion
+
 
 
 

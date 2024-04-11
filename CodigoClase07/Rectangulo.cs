@@ -18,7 +18,19 @@ namespace CodigoClase07
         public Punto Punto2 { get; set; }
         public Punto Punto3 { get; set; }
         public Punto Punto4 { get; set; }
-       
+        public Rectangulo()
+        {
+
+        }
+
+        public Rectangulo(Punto punto1, Punto punto2, Punto punto3, Punto punto4)
+        {
+            Punto1 = punto1;
+            Punto2 = punto2;
+            Punto3 = punto3;
+            Punto4 = punto4;
+        }
+
 
 
 
