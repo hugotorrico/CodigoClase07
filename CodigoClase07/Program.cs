@@ -17,6 +17,18 @@ class Program
 {
     static void Main()
     {
+        Triangulo triangulo = new Triangulo
+        {
+            Punto1 = new Punto(0, 0),
+            Punto2 = new Punto(3, 0),
+            Punto3 = new Punto(0, 4)
+        };
+
+        Console.WriteLine("AREA TRIANGULO");
+        Console.WriteLine(triangulo.CalcularArea());
+
+
+
         #region PrimeraForma
         //Constructor por defecto
         Punto punto1 = new Punto(0, 0);

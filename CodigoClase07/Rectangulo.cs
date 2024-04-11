@@ -31,30 +31,20 @@ namespace CodigoClase07
             Punto4 = punto4;
         }
 
-
-
-
-
         #endregion
         #region FuncionesPrivadas
-
-        private double CalcularDistancia(double a1, double b1, double a2, double b2)
-        {
-            double result;
-            result = Math.Sqrt(Math.Pow((a2 - a1), 2) + Math.Pow((b2 - b1), 2));
-            return result;
-
-        }
+       
         private double ObtenerAltura()
         {
-            double result;
-            result = CalcularDistancia(Punto1.X, Punto1.Y, Punto2.X, Punto2.Y);
+            double result;        
+            result = Helper.CalcularDistancia(Punto1.X, Punto1.Y, Punto2.X, Punto2.Y);
             return result;
         }
         private double ObtenerBase()
         {
             double result;
-            result = CalcularDistancia(Punto2.X, Punto2.Y, Punto3.X, Punto3.Y);
+          
+            result = Helper.CalcularDistancia(Punto2.X, Punto2.Y, Punto3.X, Punto3.Y);
             return result;
         }
 
