@@ -7,58 +7,21 @@ using System.Threading.Tasks;
 
 namespace CodigoClase07
 {   
+
+     //Clases y Entidades son los mismo!
      class Rectangulo
     {
-        #region  Propiedades/ Getter and Setter/ Get Set      
-        public double sueldo;//Variable
+        #region  Propiedades
 
-        public double X1 { get;  }//Propiedades
-        public double Y1 { get; }
-        public double X2 { get; set; }
-        public double Y2 { get; set; }
-        public double X3 { get; set; }
-        public double Y3 { get; set; }
-        public double X4 { get; set; }
-        public double Y4 { get; set; }
-        public string color { get; set; }
-
-        //private double X1;
-        //public double GetX1()
-        //{
-        //    return X1;
-        //}
-
-        //public void SetX1(double X1)
-        //{
-        //    this.X1 = X1;
-        //}
-
-        //private double Y1;
-        //public double GetY1()
-        //{
-        //    return Y1;
-        //}
-
-        //public void SetY1(double Y1)
-        //{
-        //    this.Y1 = Y1;
-        //}
+        //Propiedades de Navegación: Propiedades que son de tipo objeto
+        public Punto Punto1 { get; set; }
+        public Punto Punto2 { get; set; }
+        public Punto Punto3 { get; set; }
+        public Punto Punto4 { get; set; }
+       
 
 
-        //Constructor
-        public Rectangulo(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
-        {
 
-            X1 = x1;
-            Y1 = y1;
-            X2 = x2;
-            Y2 = y2;
-            X3 = x3;
-            Y3 = y3;
-            X4 = x4;
-            Y4 = y4;
-
-        }
 
         #endregion
         #region FuncionesPrivadas
@@ -73,13 +36,13 @@ namespace CodigoClase07
         private double ObtenerAltura()
         {
             double result;
-            result = CalcularDistancia(X1, Y1, X2, Y2);
+            result = CalcularDistancia(Punto1.X, Punto1.Y, Punto2.X, Punto2.Y);
             return result;
         }
         private double ObtenerBase()
         {
             double result;
-            result = CalcularDistancia(X2, Y2, X3, Y3);
+            result = CalcularDistancia(Punto2.X, Punto2.Y, Punto3.X, Punto3.Y);
             return result;
         }
 
